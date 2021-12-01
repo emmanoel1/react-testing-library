@@ -14,7 +14,7 @@ describe('Test 03: Favorite Pokémons', () => {
     expect(noFavorites).toBeDefined();
   });
 
-  test.only('Deve Ser Exibido Os Cards Corretos Ao Favoritar', () => {
+  test('Deve Ser Exibido Os Cards Corretos Ao Favoritar', () => {
     const { history } = RenderWithRouter(<App />);
 
     const pikachuCard = screen.getByRole('link', { name: /more details/i });
