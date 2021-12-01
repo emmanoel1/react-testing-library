@@ -35,7 +35,7 @@ describe('Test 03: Favorite Pokémons', () => {
 
     const favoriteCharmander = screen.getByLabelText(/Pokémon favoritado?/i);
     userEvent.click(favoriteCharmander);
-    expect(favoritePikachu).toBeChecked();
+    expect(favoriteCharmander).toBeChecked();
 
     history.push('/');
 
@@ -46,7 +46,6 @@ describe('Test 03: Favorite Pokémons', () => {
 
     const favoriteDragonair = screen.getByLabelText(/Pokémon favoritado?/i);
     userEvent.click(favoriteDragonair);
-    // const dragonairTitle = screen.getByText(/Dragonair Details?/i);
     expect(favoriteDragonair).toBeChecked();
 
     const favoritesLink = screen.getByRole('link', { name: /favorite pokémons/i });
@@ -55,5 +54,13 @@ describe('Test 03: Favorite Pokémons', () => {
     const favorites = screen.getAllByText(/Average/i);
     const max = 3;
     expect(favorites).toHaveLength(max);
+
+    const pikachuIsDefined = screen.getByText(/pikachu/i);
+    const charmanderIsDefined = screen.getByText(/charmander/i);
+    const dragonairIsDefined = screen.getByText(/dragonair/i);
+
+    expect(pikachuIsDefined).toBeDefined();
+    expect(charmanderIsDefined).toBeDefined();
+    expect(dragonairIsDefined).toBeDefined();
   });
 });
