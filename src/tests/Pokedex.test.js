@@ -77,26 +77,14 @@ describe('Test 05: Pokédex', () => {
 
   test('A Pokédex Deve Conter Os Botões De Filtro Para Cada Tipo De Pokémon', () => {
     RenderWithRouter(<App />);
-    const btn1 = screen.getByRole('button', { name: /electric/i });
-    expect(btn1).toBeDefined();
-
-    const btn2 = screen.getByRole('button', { name: /fire/i });
-    expect(btn2).toBeDefined();
-
-    const btn3 = screen.getByRole('button', { name: /bug/i });
-    expect(btn3).toBeDefined();
-
-    const btn4 = screen.getByRole('button', { name: /poison/i });
-    expect(btn4).toBeDefined();
-
-    const btn5 = screen.getByRole('button', { name: /psychic/i });
-    expect(btn5).toBeDefined();
-
-    const btn6 = screen.getByRole('button', { name: /normal/i });
-    expect(btn6).toBeDefined();
-
-    const btn7 = screen.getByRole('button', { name: /dragon/i });
-    expect(btn7).toBeDefined();
+    const btn1 = screen.getAllByTestId('pokemon-type-button');
+    expect(btn1[0]).toBeDefined();
+    expect(btn1[1]).toBeDefined();
+    expect(btn1[2]).toBeDefined();
+    expect(btn1[3]).toBeDefined();
+    expect(btn1[4]).toBeDefined();
+    expect(btn1[5]).toBeDefined();
+    expect(btn1[6]).toBeDefined();
   });
 
   test('A Partir Da Seleção Do Tipo, Deve Ser Exibido Apenas Aquele Tipo', () => {
