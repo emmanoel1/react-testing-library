@@ -5,9 +5,7 @@
 Página em react que apresenta alguns pokémons do universo de pokémon e apresenta seus detalhes, também é possível favoritar pokémons.
 
 # Quer rodar o App?
-
-
-
+https://emmanoel1-react-testing-library.pages.dev/
 
 # Instruções para rodar o projeto localmente e os testes:
 
