@@ -1,4 +1,15 @@
-# Instruções para rodar o projeto:
+<img src="./pokédex.png" alt="Pokédex Page" />
+
+# Sobre o Projeto:
+
+Página em react que apresenta alguns pokémons do universo de pokémon e apresenta seus detalhes, também é possível favoritar pokémons.
+
+# Quer rodar o App?
+
+
+
+
+# Instruções para rodar o projeto localmente e os testes:
 
 1. Clone o repositório
   * `git clone git@github.com:emmanoel1/react-testing-library.git`
