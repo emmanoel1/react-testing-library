@@ -11,3 +11,18 @@
   
 3. Rode o Projeto Testado
   * `npm start`
+
+4. Para Rodar um teste específico
+  * `npm test {nome do teste}`
+    * exemplo `npm test about`
+  * Lista com todos os testes:
+    * `about`
+    * `app`
+    * `favoritepokemons`
+    * `notfound`
+    * `pokedex`
+    * `pokemon`
+  
+
+5. Para rodar todos testes e calcular a média de aprovação
+  * `npm run test-coverage`
