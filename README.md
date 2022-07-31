@@ -2,7 +2,7 @@
 
 # Sobre o Projeto:
 
-Página em react que apresenta alguns pokémons do universo de pokémon e apresenta seus detalhes, também é possível favoritar pokémons.
+Página em react que consome a [PokéAPI](https://pokeapi.co/)  que apresenta alguns pokémons do universo de pokémon e apresenta seus detalhes, também é possível favoritar pokémons.
 
 # Quer rodar o App?
 https://emmanoel1-react-testing-library.pages.dev/
